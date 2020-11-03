@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ 	.bor {
+ 		border: 1px solid #000;
+ 	}
+ 	.num {
+ 		text-align: center;
+ 		border-top : 1px solid #000;
+ 	}
+ 	.num > ul{
+ 		list-style: none;
+ 	}
+ 	.num > ul > li{
+ 		display: inline-block;
+ 	}
+ 	.body {
+ 		border-top: 1px solid #000;
+ 	}
+	.body > .text:nth-child(2), .text:nth-child(4) {
+		text-align: right;
+	}
+	.body > .text:nth-child(5){
+		text-align: center;
+	}
+	.end {
+		border-top: 1px solid #000;
+	}
+</style>
+</head>
+<body>
+	<div class="bor">
+		<div class="head"><img src="logo.jfif"></div>
+		<div class="num">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+		<div class="body">
+			<div class="text">안녕하세요</div>
+			<div class="text">반갑습니다</div>
+			<div class="text">안녕히가세요</div>
+			<div class="text">잘가세요</div>
+			<div class="text">대화가 종료되었습니다.</div>
+		</div>
+		<div class="end">동영이 만듦</div>
+	</div>
+</body>
+</html>
