@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <title>사슴에 관하여</title>
+    <body>
+        <input type="text" id="firstColor">
+        <input type="text" id="secondColor">
+        <input type="text" id="thirdColor">
+        <input type="button" value="change!"
+            onclick="backgroundColorChangeToColorTextInput()">
+        <script>
+            function backgroundColorChangeToColorTextInput(){
+                let typedColor1 = document.getElementById("firstColor");
+                let typedColor2 = document.getElementById("secondColor");
+                let typedColor3 = document.getElementById("thirdColor");
+                setTimeout(() => document.body.style.background = typedColor1.value, 1000);
+                setTimeout(() => document.body.style.background = typedColor2.value, 2000);
+                setTimeout(() => document.body.style.background = typedColor3.value, 3000);
+            }
+        </script>
+        <div>
+
+        </div>
+    </body>
+    </head>
+    </html>
