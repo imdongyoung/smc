@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>사슴에 관하여</title>
+<body>
+    <input type="text" id="color">
+    <input type="button" value="change!"
+        onclick="backgroundColorChangeToColorTextInput()">
+    <script>
+        function backgroundColorChangeToColorTextInput(){
+            let typedColor = document.getElementById("color");
+            if(color === "red" && typedColor.value === "blue" && 
+            typedColor.value === "green"){
+                document.body.style.background = typedColor.value;
+                alert(typedColor.value);
+            } else {
+                alert("변경할 수 없습니다.")
+            }
+
+        }
+    </script>
+    <div>
+
+    </div>
+</body>
+</head>
+</html>

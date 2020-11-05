@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>사슴에 관하여</title>
+<body>
+    <input type="text" id="color">
+    <input type="button" onclick="showMessage()">
+    <input type="button" onclick="changeBackgroundColorTo1()">
+    <input type="button" onclick="changeBackgroundColorTo2()">
+    <input type="button" onclick="changeBackgroundColorTo3()">
+    <script>
+        function showMessage(){
+            alert("Message");
+        }
+        function changeBackgroundColorTo1(){
+            document.body.style.background = "#FFE2FE";
+        }
+        function changeBackgroundColorTo2(){
+            document.body.style.background = "#1CFF9C";
+        }
+        function changeBackgroundColorTo3(){
+            document.body.style.background = "#00A086";
+        }
+        for(const elem of document.body.children){
+            alert(elem.text);
+        }
+    </script>
+    <div>
+        시작
+    </div>
+</body>
+</head>
+</html>
