@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <body>
+        회원가입 </br>
+        이름
+        <input type="text" id="NAMETEXT" maxlength="10" minlength="2"> </br>
+        아이디
+        <input type="text" id="IDTEXT"> </br>
+        비밀번호
+        <input type="text" id="PASSWORDTEXT" maxlength="9"> </br>
+        주민등록번호 
+        <input type="text" id="NUMBERTEXT" maxlength="6">-<input type="text" id="NUMBER" maxlength="1"> </br>
+        <input type="button" value="Y" id="YES" onclick="YES()"> <input type="button" value="N" id="NO" onclick="NO()">
+        <script>
+            const NAME = "임동영";
+            const ID = "imdongyoung";
+            const PASSWORD = "12345678";
+            const RESIDENT_REGISTRATION_NUMBER1 = "030207"
+            const RESIDENT_REGISTRATION_NUMBER2 = "3"
+            let PASSWORDTEXT = document.getElementById()
+            function NO(){
+                let arr = document.querySelectorAll("input[type=text]");
+                for(const elements of arr){
+                    elements.value = "";
+                }
+            }
+            function YES(){
+                let NAMETEXT = document.getElementById(NAMETEXT);
+                if(NAMETEXT == NAME){
+                    alert("완료!");
+                }
+            }
+        </script>
+    </body>
+</head>
+</html>
