@@ -240,3 +240,21 @@ GROUP BY
     TO_CHAR(ORDER_DATE, 'YYYYMMDD')
 ORDER BY
     TO_CHAR(ORDER_DATE, 'YYYYMMDD');
+
+UPDATE CATALOGUE
+SET 
+
+-- 추가 문제 #2
+-- PRODUCT 테이블에서 상품명, 상품 설명을 가져오게끔 합니다
+-- 만약 상품 설명이 10글자 이상인 경우 "탁월한 생산성을 위..." 와 같이 10글자 이후에는 ... 을 붙혀 주고
+-- 10글자 미만인 경우 모두 출력되게끔 합니다 (... 이 붙어서는 안됩니다)
+-- oracle IF(https://gent.tistory.com/311), SUBSTR(https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions162.htm), ||(https://dpdpwl.tistory.com/80) 연산자 사용 필요
+SELECT
+    NAME, DESCRIPTION,
+    CASE WHEN LENGTH(DESCRIPTION) >= 10 THEN
+        SUBSTR(DESCRIPTION,0,10) || '...'
+    ELSE
+        DESCRIPTION
+    END
+FROM 
+    PRODUCT
